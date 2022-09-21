@@ -1,6 +1,6 @@
 import React, { useRef, useImperativeHandle, forwardRef } from "react";
 
-function CategoryAnimator({ src, desc, TT }, ref) {
+function CategoryAnimator({ TT }, ref) {
   const image = useRef();
   const description = useRef();
   useImperativeHandle(
@@ -11,8 +11,8 @@ function CategoryAnimator({ src, desc, TT }, ref) {
           image.current.src = url;
           TT.fromTo(
             image.current,
-            { opacity: 0.8, scale: 1 },
-            { opacity: 1, scale: 1.2 }
+            { opacity: 0.8, scale: 1, filter: "blur(4px)" },
+            { opacity: 1, scale: 1.2, filter: "blur(0)" }
           );
         },
         reverseImage: () => {
@@ -29,7 +29,7 @@ function CategoryAnimator({ src, desc, TT }, ref) {
   return (
     <div className="contentAnimation">
       <img
-        src={src || "https://wallpaperaccess.com/full/1078694.jpg"}
+        src={"https://wallpaperaccess.com/full/1078694.jpg"}
         alt=""
         className="contentImage"
         ref={image}
