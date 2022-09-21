@@ -8,6 +8,7 @@ import Slider from "../components/Slider";
 import Navbar from "../components/Navbar";
 import SlideShow from "../components/SlideShow";
 import Drawer from "../components/Drawer";
+import Category from "../components/Category";
 
 export default function Home() {
   //useLayoutEffect(() => {}, []);
@@ -24,6 +25,7 @@ export default function Home() {
         <Slider />
         <Navbar />
         <SlideShow />
+        <Category />
       </div>
     </div>
   );

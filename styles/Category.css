@@ -1,0 +1,42 @@
+.categoryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.categoryListContainer {
+  padding-left: 30px;
+  flex: 1;
+}
+.categoryList {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.contentImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentAnimation {
+  position: relative;
+  flex: 2;
+  overflow: hidden;
+  height: inherit;
+  background-color: white;
+}
+
+.contentDescription {
+  position: absolute;
+  top: 300px;
+  right: 30px;
+  word-wrap: break-word;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+}
