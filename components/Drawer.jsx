@@ -10,10 +10,10 @@ function Drawer() {
   function closeDrawer() {
     TL.to(".sliderContainer", { display: "none", duration: 0 });
     TL.to(".drawer", { x: "100%" });
-    //TL.to(".wrapper", { display: "block", duration: 0 }, "-=1");
     //TL.to(".wrapper", { scale: 1, x: "0%" }, "-=1");
     TL.to(".wrapper", { x: "0%" }, "-=1.2");
     TL.to(".navContainer", { position: "fixed" });
+    // TL.to(".wrapper", { display: "block", duration: 0 }, "-=1");
   }
   return (
     <div className="drawer">
