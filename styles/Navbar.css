@@ -1,5 +1,5 @@
 .navContainer {
-  background-color: whitesmoke;
+  background-color: rgb(33, 36, 38);
   position: fixed;
   top: 0;
   display: flex;
@@ -12,6 +12,7 @@
   padding-right: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: white;
 }
 
 .center {

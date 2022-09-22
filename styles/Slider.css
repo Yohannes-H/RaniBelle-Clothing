@@ -5,19 +5,21 @@
 .introOne {
   position: fixed;
   top: 0;
-  background-color: red;
+
   width: 100vw;
   height: 100vh;
   /* transform: translateY(100%); */
   z-index: 999;
+  background-image: url("../public/album/img2.jpg");
 }
 
 .introTwo {
   position: fixed;
   top: 0;
-  background-color: green;
+
   width: 100vw;
   height: 100vh;
   transform: translateY(100%);
   z-index: 999;
+  background-image: url("../public/album/img3.jpg");
 }

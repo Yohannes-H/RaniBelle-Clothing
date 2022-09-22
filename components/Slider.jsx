@@ -9,8 +9,8 @@ function Slider() {
   const slider2 = useRef(null);
 
   useLayoutEffect(() => {
-    TL.to(slider1.current, { y: "-100%", duration: 2, delay: 1 });
-    TL.to(slider2.current, { y: "-100%", duration: 2 }, "-=2");
+    TL.to(slider1.current, { y: "-100%", duration: 1.5, delay: 2 });
+    TL.to(slider2.current, { y: "-100%", duration: 3.5 }, "-=1.6");
   }, []);
 
   return (

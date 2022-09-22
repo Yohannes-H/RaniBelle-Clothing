@@ -10,9 +10,11 @@ function Navbar() {
   function openDrawer() {
     TL.to(".sliderContainer", { display: "none", duration: 0 });
     // TL.to(".wrapper", { display: "none", duration: 0 });
-    TL.to(".wrapper", { scale: 0, duration: 1.5 });
+    // TL.to(".wrapper", { scale: 0.9, duration: 1.5 });
+    TL.to(".wrapper", { x: "-100%", duration: 1.5 });
+
+    // TL.to(".wrapper", { display: "none", duration: 0 });
     TL.to(".drawer", { x: "0%" }, "-=1.5");
-    TL.to(".wrapper", { display: "none", duration: 0 });
   }
 
   return (
