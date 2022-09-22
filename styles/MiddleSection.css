@@ -1,0 +1,28 @@
+.middleSectionContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+.images {
+  display: flex;
+  gap: 30px;
+}
+.images img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.description {
+}
+.description p {
+  text-align: center;
+  font-weight: 600;
+  width: 700px;
+  word-wrap: break-word;
+  transform: translateY("-100%");
+}

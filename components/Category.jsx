@@ -4,7 +4,7 @@ import CategoryAnimator from "./CategoryAnimator";
 function Category() {
   const Parentref = useRef();
 
-  const TT = gsap.timeline({ defaults: { duration: 1.2 } });
+  const TT = gsap.timeline({ defaults: { duration: 0.7 } });
 
   const nightDress = useRef(null);
   const weddingDress = useRef(null);
@@ -18,9 +18,12 @@ function Category() {
               id="nightdress"
               className="listItem"
               onMouseEnter={() => {
-                Parentref.current.animmateImage(
+                Parentref.current.animateImage(
                   "https://images.pexels.com/photos/1125328/pexels-photo-1125328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                 );
+              }}
+              onMouseLeave={() => {
+                Parentref.current.reverseImage();
               }}
               ref={nightDress}
             >
@@ -33,9 +36,12 @@ function Category() {
               id="weddingdress"
               className="listItem"
               onMouseEnter={() => {
-                Parentref.current.animmateImage(
+                Parentref.current.animateImage(
                   "https://wallpaperaccess.com/full/6767303.jpg"
                 );
+              }}
+              onMouseLeave={() => {
+                Parentref.current.reverseImage();
               }}
               ref={weddingDress}
             >

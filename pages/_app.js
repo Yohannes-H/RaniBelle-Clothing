@@ -5,6 +5,7 @@ import "../styles/Home.css";
 import "../styles/Slider.css";
 import "../styles/SlideShow.css";
 import "../styles/Category.css";
+import "../styles/MiddleSection.css";
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

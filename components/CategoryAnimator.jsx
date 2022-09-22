@@ -7,20 +7,16 @@ function CategoryAnimator({ TT }, ref) {
     ref,
     () => {
       return {
-        animmateImage(url) {
+        animateImage(url) {
           image.current.src = url;
           TT.fromTo(
             image.current,
-            { opacity: 0.8, scale: 1, filter: "blur(4px)" },
+            { opacity: 0.8, scale: 1, filter: "blur(0.7px)" },
             { opacity: 1, scale: 1.2, filter: "blur(0)" }
           );
         },
         reverseImage: () => {
-          TT.fromTo(
-            image.current,
-            { opacity: 1, scale: 1.2 },
-            { opacity: 0.8, scale: 1 }
-          );
+          TT.to(image.current, { opacity: 1, scale: 1, duration: 0 });
         },
       };
     },
