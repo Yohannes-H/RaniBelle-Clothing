@@ -9,17 +9,19 @@ import MiddleSection from "../components/MiddleSection";
 
 export default function Home() {
   return (
-    <div className="home">
-      <Navbar />
-
-      <div className="wrapper">
-        <SlideShow />
-        <MiddleSection />
-        <Category />
-      </div>
-
+    <>
       <Slider />
-      <Drawer />
-    </div>
+      <div className="home">
+        <Navbar />
+
+        <div className="wrapper">
+          <SlideShow />
+          <MiddleSection />
+          <Category />
+        </div>
+
+        <Drawer />
+      </div>
+    </>
   );
 }

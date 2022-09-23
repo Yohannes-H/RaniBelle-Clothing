@@ -1,16 +1,18 @@
 import { gsap } from "gsap";
 //import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 function Slider() {
-  const TL = gsap.timeline();
+  const TL = gsap.timeline({ defaults: { duration: 1 } });
 
   const slider1 = useRef(null);
   const slider2 = useRef(null);
 
   useLayoutEffect(() => {
-    TL.to(slider1.current, { y: "-100%", duration: 1.5, delay: 2 });
-    TL.to(slider2.current, { y: "-100%", duration: 3.5 }, "-=1.6");
+    TL.to(slider1.current, { y: "-100%", duration: 2, delay: 2 });
+    TL.to(".home", { y: "0%", duration: 2 }, "-=2.78");
+    //TL.to(".home", { visibility: "visible" }, "-=2");
+    // TL.to(slider2.current, { y: "-100%", duration: 2.5 });
   }, []);
 
   return (

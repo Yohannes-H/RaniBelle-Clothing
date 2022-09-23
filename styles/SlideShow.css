@@ -1,10 +1,11 @@
 .zoomSlider {
   height: 100vh;
+  width: 100vw;
 }
 
 .zoomSlider img {
-  /* height: 100vh !important; */
-  /* width: 100vw !important; */
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
 .zoomContainer {
