@@ -10,7 +10,7 @@ function Slider() {
 
   useLayoutEffect(() => {
     TL.to(slider1.current, { y: "-100%", duration: 2, delay: 2 });
-    TL.to(".home", { y: "0%", duration: 2 }, "-=2.78");
+    //TL.to(".home", { y: "0%", duration: 2 }, "-=2.78");
     //TL.to(".home", { visibility: "visible" }, "-=2");
     // TL.to(slider2.current, { y: "-100%", duration: 2.5 });
   }, []);

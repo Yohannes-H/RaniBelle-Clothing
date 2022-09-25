@@ -2,7 +2,11 @@ import { style } from "@mui/system";
 import React, { useLayoutEffect } from "react";
 import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import { gsap } from "gsap";
+import { useRouter } from "next/router";
+
 function Drawer() {
+  const router = useRouter();
+
   const TL = gsap.timeline({ defaults: { duration: 1 } });
 
   useLayoutEffect(() => {}, []);
@@ -11,7 +15,21 @@ function Drawer() {
     TL.to(".sliderContainer", { display: "none", duration: 0 });
     TL.to(".drawer", { x: "100%" });
     //TL.to(".wrapper", { scale: 1, x: "0%" }, "-=1");
-    TL.to(".wrapper", { x: "0%" }, "-=1.2");
+    if (router.pathname === "/") {
+      TL.to(
+        ".wrapper",
+        {
+          x: "0%",
+          position: "static",
+          // height: "auto", overflowY: "auto"
+        },
+        "-=1.2"
+      );
+    }
+    //or
+    if (router.pathname === "/about") {
+      TL.to(".about", { x: "0%", position: "static" }, "-=1.2");
+    }
     TL.to(".navContainer", { position: "fixed" });
     // TL.to(".wrapper", { display: "block", duration: 0 }, "-=1");
   }

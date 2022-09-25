@@ -5,16 +5,34 @@ import Data from "../data/NavigationData";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import { useRouter } from "next/router";
 function Navbar() {
+  const router = useRouter();
+
   const TL = gsap.timeline({ defaults: { duration: 1 } });
   function openDrawer() {
     TL.to(".sliderContainer", { display: "none", duration: 0 });
-    // TL.to(".wrapper", { display: "none", duration: 0 });
-    // TL.to(".wrapper", { scale: 0.9, duration: 1.5 });
-    TL.to(".wrapper", { x: "-100%", duration: 1.5 });
+
+    if (router.pathname === "/") {
+      TL.to(".wrapper", {
+        x: "-100%",
+        position: "absolute",
+        // height: "100vh",
+        // overflow: "hidden",
+        duration: 1.5,
+      });
+    }
+
+    //or
+    else if (router.pathname === "/about") {
+      TL.to(".about", {
+        x: "-100%",
+        position: "absolute",
+        duration: 1.5,
+      });
+    }
 
     TL.to(".drawer", { x: "0%" }, "-=1.5");
-    //    TL.to(".wrapper", { display: "none", duration: 0 });
   }
 
   return (

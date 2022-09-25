@@ -2,6 +2,6 @@
   /* position: relative; */
   /* overflow: hidden; */
   overflow-x: hidden;
-  /* visibility: hidden; */
-  transform: translateY(100%);
+
+  /* transform: translateY(100%); */
 }

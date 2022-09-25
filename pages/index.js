@@ -20,7 +20,7 @@ export default function Home() {
           <Category />
         </div>
 
-        <Drawer />
+        {/* <Drawer /> */}
       </div>
     </>
   );
