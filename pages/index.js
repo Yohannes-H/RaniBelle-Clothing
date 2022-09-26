@@ -7,6 +7,7 @@ import SlideShow from "../components/SlideShow";
 import Category from "../components/Category";
 import MiddleSection from "../components/MiddleSection";
 import Footer from "../components/Footer";
+import Location from "../components/Location";
 export default function Home() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function Home() {
           <MiddleSection />
           <Category />
         </div>
+        <Location />
         <Footer />
       </div>
     </>

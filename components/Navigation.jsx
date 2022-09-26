@@ -1,7 +1,10 @@
 import React from "react";
-import styles from "../styles/Navigation.module.css";
 function Navigation({ name }) {
-  return <li>{name}</li>;
+  return (
+    <li>
+      <a href="#">{name}</a>
+    </li>
+  );
 }
 
 export default Navigation;

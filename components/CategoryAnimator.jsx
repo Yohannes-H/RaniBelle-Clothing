@@ -30,13 +30,15 @@ function CategoryAnimator({ TT }, ref) {
         className="contentImage"
         ref={image}
       />
-      <p className="contentDescription" ref={description}>
-        <i>Category</i>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sint
-        iste modi assumenda minima dignissimos voluptatibus, praesentium nemo
-        temporibus ducimus fugiat non est natus possimus optio? Fuga laboriosam
-        recusandae dolore!
-      </p>
+
+      <div className="contentDescription" ref={description}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit sint
+          iste modi assumenda minima dignissimos voluptatibus, praesentium nemo
+          temporibus ducimus fugiat non est natus possimus optio? Fuga
+          laboriosam recusandae dolore!
+        </p>
+      </div>
     </div>
   );
 }

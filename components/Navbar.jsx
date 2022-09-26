@@ -8,6 +8,7 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 import { useRouter } from "next/router";
 import IconButton from "@mui/material/IconButton";
 import Head from "next/head";
+import Link from "next/link";
 
 function Navbar() {
   const router = useRouter();
@@ -56,9 +57,21 @@ function Navbar() {
       <div className="center">
         <div className="navigation">
           <ul>
-            {Data?.map((nav) => {
+            {/* {Data?.map((nav) => {
               return <Navigation key={nav.id} name={nav.name} />;
-            })}
+            })} */}
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About</Link>
+            </li>
+            <li>
+              <a href="#location">Location</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
         </div>
       </div>

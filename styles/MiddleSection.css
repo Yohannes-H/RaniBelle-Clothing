@@ -6,8 +6,9 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
-  background-color: rgb(33, 36, 38);
-  color: white;
+  background-color: white;
+  /* background-color: rgb(33, 36, 38); */
+  color: black;
 }
 .images {
   display: flex;

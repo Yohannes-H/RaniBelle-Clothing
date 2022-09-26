@@ -15,14 +15,14 @@
   position: absolute;
   bottom: 30px;
   right: 20px;
-  background-color: rgb(33, 36, 38);
+  background-color: rgba(33, 36, 38, 0.7);
   color: white;
   z-index: 14;
   width: 400px;
   height: 400px;
   text-align: left;
   padding: 10px;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   word-wrap: break-word;
   font-size: 20px;
 }
