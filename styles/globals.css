@@ -27,6 +27,7 @@ img {
 *::-webkit-scrollbar-thumb {
   background-color: palevioletred;
   border-radius: 100vw;
+  cursor: pointer;
 }
 *::-webkit-scrollbar-thumb:hover {
   opacity: 0.8;
