@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   opacity: 0.7;
-  z-index: 11;
+  z-index: 15;
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
@@ -18,7 +18,7 @@
 .center {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  /* gap: 20px; */
   justify-content: center;
   align-items: center;
 }
@@ -35,4 +35,25 @@
   display: flex;
   gap: 20px;
   cursor: pointer;
+}
+
+.right .cart {
+  color: white;
+}
+.right .hamBurgerMenu {
+  color: white;
+}
+.right .account {
+  color: white;
+}
+
+.brand {
+}
+.navContainer .left .brand .brandName {
+  /* font-family: "Cinzel", serif; */
+  font-family: "Allura", cursive;
+  /* font-size: 50px;
+  font-weight: 600; */
+  color: palevioletred;
+  font-family: inherit;
 }

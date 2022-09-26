@@ -27,8 +27,15 @@ function Drawer() {
       );
     }
     //or
-    if (router.pathname === "/about") {
-      TL.to(".about", { x: "0%", position: "static" }, "-=1.2");
+    else if (router.pathname === "/about") {
+      TL.to(
+        ".about",
+        {
+          x: "0%",
+          // position: "static"
+        },
+        "-=1.2"
+      );
     }
     TL.to(".navContainer", { position: "fixed" });
     // TL.to(".wrapper", { display: "block", duration: 0 }, "-=1");

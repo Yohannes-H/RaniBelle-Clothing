@@ -1,0 +1,65 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #212426;
+  /* height: 300px; */
+}
+.topFooter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.topFooter .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: max-content;
+  gap: 10px;
+}
+.topFooter .left a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.topFooter .center {
+  width: max-content;
+  text-align: center;
+  height: max-content;
+}
+
+.topFooter .center .brandTop {
+  font-family: "Allura", cursive;
+  font-size: 50px;
+  font-weight: 600;
+  color: palevioletred;
+  line-height: 30px;
+}
+.topFooter .center .brandBottom {
+  font-family: "Allura", cursive;
+  font-size: 30px;
+  font-weight: 400;
+  color: whitesmoke;
+}
+.bottomFooter {
+  text-align: center;
+}
+
+.bottomFooter .copyRight {
+  color: whitesmoke;
+}
+.companyLogo {
+  display: flex;
+  color: whitesmoke;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.companyLogo .cmpLogo {
+  width: 50px;
+  height: 50px;
+}

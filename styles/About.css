@@ -1,6 +1,9 @@
+.about {
+  padding-top: 150px;
+}
+
 .aboutContentHolder {
   display: flex;
-  margin-top: 150px;
   gap: 20px;
   justify-content: space-around;
 }

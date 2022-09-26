@@ -3,10 +3,10 @@ import Head from "next/head";
 import Slider from "../components/Slider";
 import Navbar from "../components/Navbar";
 import SlideShow from "../components/SlideShow";
-import Drawer from "../components/Drawer";
+
 import Category from "../components/Category";
 import MiddleSection from "../components/MiddleSection";
-
+import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
@@ -19,8 +19,7 @@ export default function Home() {
           <MiddleSection />
           <Category />
         </div>
-
-        {/* <Drawer /> */}
+        <Footer />
       </div>
     </>
   );

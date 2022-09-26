@@ -6,6 +6,9 @@ import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import { useRouter } from "next/router";
+import IconButton from "@mui/material/IconButton";
+import Head from "next/head";
+
 function Navbar() {
   const router = useRouter();
 
@@ -27,7 +30,7 @@ function Navbar() {
     else if (router.pathname === "/about") {
       TL.to(".about", {
         x: "-100%",
-        position: "absolute",
+        // position: "absolute",
         duration: 1.5,
       });
     }
@@ -37,11 +40,20 @@ function Navbar() {
 
   return (
     <div className="navContainer">
-      <div className="left">Left</div>
-      <div className="center">
+      {/* <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+          rel="stylesheet"
+        />
+      </Head> */}
+      <div className="left">
         <div className="brand">
-          <h2>RANI BELLE</h2>
+          <span className="brandName">RANI BELLE</span>
         </div>
+      </div>
+      <div className="center">
         <div className="navigation">
           <ul>
             {Data?.map((nav) => {
@@ -51,9 +63,16 @@ function Navbar() {
         </div>
       </div>
       <div className="right">
-        <ShoppingBagOutlinedIcon />
-        <AccountCircleOutlinedIcon />
-        <MenuOutlinedIcon onClick={openDrawer} />
+        <IconButton color="info">
+          <ShoppingBagOutlinedIcon className="cart" />
+        </IconButton>
+        <IconButton color="info">
+          <AccountCircleOutlinedIcon className="account" />
+        </IconButton>
+
+        <IconButton color="info">
+          <MenuOutlinedIcon className="hamBurgerMenu" onClick={openDrawer} />
+        </IconButton>
       </div>
     </div>
   );
