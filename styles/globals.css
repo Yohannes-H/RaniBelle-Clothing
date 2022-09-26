@@ -6,10 +6,28 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: white;
   /* overflow-x: hidden; */
 }
 img {
   transition: all 200ms ease;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: pink;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: palevioletred;
+  border-radius: 100vw;
+}
+*::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
 }

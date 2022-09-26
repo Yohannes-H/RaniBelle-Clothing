@@ -20,7 +20,7 @@ function Drawer() {
         ".wrapper",
         {
           x: "0%",
-          position: "static",
+          // position: "static",
           // height: "auto", overflowY: "auto"
         },
         "-=1.2"

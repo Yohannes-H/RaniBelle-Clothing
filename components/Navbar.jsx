@@ -19,7 +19,7 @@ function Navbar() {
     if (router.pathname === "/") {
       TL.to(".wrapper", {
         x: "-100%",
-        position: "absolute",
+        //position: "absolute",
         // height: "100vh",
         // overflow: "hidden",
         duration: 1.5,
