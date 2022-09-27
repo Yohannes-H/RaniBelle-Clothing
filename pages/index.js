@@ -8,9 +8,13 @@ import Category from "../components/Category";
 import MiddleSection from "../components/MiddleSection";
 import Footer from "../components/Footer";
 import Location from "../components/Location";
+import Modal from "../components/Modal";
+import { appContext } from "../context/context";
 export default function Home() {
+  const { modal } = appContext();
   return (
     <>
+      {modal && <Modal />}
       <Slider />
       <div className="home">
         <Navbar />

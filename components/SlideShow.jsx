@@ -12,7 +12,7 @@ function SlideShow() {
   ];
   return (
     <div className="zoomContainer">
-      <Zoom scale={1.2} duration={2000} arrows={false} cssClass="zoomSlider">
+      <Zoom scale={1.2} duration={5000} arrows={false} cssClass="zoomSlider">
         {images.map((each, index) => (
           <div
             key={index}

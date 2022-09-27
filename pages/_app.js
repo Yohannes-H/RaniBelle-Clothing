@@ -10,12 +10,21 @@ import "../styles/About.css";
 import "../styles/Footer.css";
 import "../styles/Navigation.css";
 import "../styles/Location.css";
+import "../styles/Modal.css";
 import Drawer from "../components/Drawer";
+
+import { useState } from "react";
+
+import { AppContext } from "../context/context";
+
 function MyApp({ Component, pageProps }) {
+  const [modal, setModal] = useState(false);
   return (
     <>
-      <Drawer />
-      <Component {...pageProps} />
+      <AppContext.Provider value={{ modal, setModal }}>
+        <Drawer />
+        <Component {...pageProps} />
+      </AppContext.Provider>
     </>
   );
 }

@@ -1,0 +1,134 @@
+.modal {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modalContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 60vw;
+  height: 80vh;
+  border-radius: 12px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(160, 159, 159, 0.4),
+    rgba(160, 159, 159, 0.2)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.modalContainer .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 2;
+  /* background-color: red; */
+  gap: 20px;
+}
+.modalContainer .left input {
+  border-radius: 0;
+  outline: none;
+  border: 1px solid palevioletred;
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  background-color: transparent;
+  color: black;
+  padding-left: 10px;
+}
+.modalContainer .left textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid palevioletred;
+  border-radius: 0;
+  outline: none;
+  padding-left: 10px;
+  background-color: transparent;
+  color: black;
+  font-size: 24px;
+  padding-top: 10px;
+  resize: none;
+}
+.modalContainer .left textarea::placeholder,
+.modalContainer .left input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.modalContainer .left button {
+  height: 50px;
+  width: 50%;
+  color: palevioletred;
+  background: transparent;
+  border: 1px solid palevioletred;
+  cursor: pointer;
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+}
+.modalContainer .left button:hover {
+  color: white;
+  background-color: palevioletred;
+}
+.modalContainer .right {
+  flex: 1;
+  /* background-color: green; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.modalContainer .right .top {
+  align-self: flex-end;
+  width: 30px;
+}
+.modalContainer .right .top .closeIcon {
+  color: palevioletred;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.modalContainer .right .top .closeIcon:hover {
+  opacity: 0.6;
+}
+
+.modalContainer .right .middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modalContainer .right .middle .phoneIcon,
+.modalContainer .right .middle .emailIcon {
+  font-size: 30px;
+  color: palevioletred;
+}
+
+.modalContainer .right .middle span {
+  font-size: 18px;
+}
+
+.modalContainer .right .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.modalContainer .right .bottom a {
+  text-decoration: none;
+  color: palevioletred;
+}

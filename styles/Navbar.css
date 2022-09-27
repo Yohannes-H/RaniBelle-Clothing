@@ -46,14 +46,13 @@
 .right .account {
   color: white;
 }
-
-.brand {
+.iconContainer {
+  color: palevioletred;
 }
 .navContainer .left .brand .brandName {
-  /* font-family: "Cinzel", serif; */
   font-family: "Allura", cursive;
-  /* font-size: 50px;
-  font-weight: 600; */
+  font-size: 50px;
+  font-weight: 600;
   color: palevioletred;
-  font-family: inherit;
+  /* line-height: 30px; */
 }

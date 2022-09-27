@@ -9,9 +9,10 @@ import { useRouter } from "next/router";
 import IconButton from "@mui/material/IconButton";
 import Head from "next/head";
 import Link from "next/link";
-
+import { appContext } from "../context/context";
 function Navbar() {
   const router = useRouter();
+  const { setModal } = appContext();
 
   const TL = gsap.timeline({ defaults: { duration: 1 } });
   function openDrawer() {
@@ -51,7 +52,7 @@ function Navbar() {
       </Head> */}
       <div className="left">
         <div className="brand">
-          <span className="brandName">RANI BELLE</span>
+          <span className="brandName">Rani Belle</span>
         </div>
       </div>
       <div className="center">
@@ -69,21 +70,25 @@ function Navbar() {
             <li>
               <a href="#location">Location</a>
             </li>
-            <li>
-              <a href="#">Contact Us</a>
+            <li
+              onClick={() => {
+                setModal((prev) => !prev);
+              }}
+            >
+              Contact Us
             </li>
           </ul>
         </div>
       </div>
       <div className="right">
-        <IconButton color="info">
+        <IconButton className="iconContainer">
           <ShoppingBagOutlinedIcon className="cart" />
         </IconButton>
-        <IconButton color="info">
+        <IconButton className="iconContainer">
           <AccountCircleOutlinedIcon className="account" />
         </IconButton>
 
-        <IconButton color="info">
+        <IconButton className="iconContainer">
           <MenuOutlinedIcon className="hamBurgerMenu" onClick={openDrawer} />
         </IconButton>
       </div>
